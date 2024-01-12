@@ -8,8 +8,6 @@ import About from '../component/about.jsx'
 import Category from '../component/category.jsx'
 import Contact from '../component/contact.jsx'
 
-import '../index.css'
-
 function Home() {
     return (
         <>

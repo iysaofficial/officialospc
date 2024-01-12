@@ -1,7 +1,6 @@
-import "../assets/css/styles.css"
-import CompFaq from "../component/CompFaq";
-import Navigation from "../component/navigation";
-import Footer from "../component/footer";
+import CompFaq from "../component/CompFaq.jsx";
+import Navigation from "../component/navigation.jsx";
+import Footer from "../component/footer.jsx";
 
 const faq = () => {
     
