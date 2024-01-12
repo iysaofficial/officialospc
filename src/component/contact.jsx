@@ -11,19 +11,19 @@ const contact = () => {
                             <hr style={{ border: '3px solid' }} />
                         </div>
                         <div className="contact-input row">
-                            <div className="input-wrapper col-lg-8 mb-3 mb-lg-0">
+                            <form action="https://formspree.io/f/xoqoddrr" method="POST" className="input-wrapper col-lg-8 mb-3 mb-lg-0">
                                 <p>Silakan isi formulir di bawah ini untuk mengirimkan email kepada kami dan kami akan membalas Anda sesegera mungkin.</p>
                                 <div className="input-first mt-3">
-                                    <input className="input-box" type="text" placeholder="Nama Lengkap"/>
-                                    <input className="input-box" type="email" placeholder="Alamat Email"/>
+                                    <input className="input-box" type="text" name="name" placeholder="Nama Lengkap"/>
+                                    <input className="input-box" type="email" name="email" required placeholder="Alamat Email"/>
                                 </div>
                                 <div className="input-second mt-3">
-                                    <textarea type="text" rows={4} className="form-control" placeholder="Pesan / Pertanyaan"/>
+                                    <textarea type="text" rows={4} className="form-control" name="massage" required placeholder="Pesan / Pertanyaan"/>
                                 </div>
                                 <div className="btn-submit">
                                     <button type="submit" className=" btn btn-primary btn-action">Kirim</button>
                                 </div>
-                            </div>
+                            </form>
                             <div className="contact-info col-lg-4">
                                 <h4>Kontak Info</h4>
                                 <div className="contact-text">

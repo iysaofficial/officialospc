@@ -273,22 +273,6 @@ const data2 = [
     answer:
       "Teman-teman akan diberikan waktu 15 menit untuk 1 sesi presentasi yang akan dibagi 2 yaitu 7 menit awal untuk presentasi dan 8 menit akhir untuk sesi tanya jawab dengan juri",
   },
-  {
-    no: "6",
-    datatarget: "#faqCollapse-During-6",
-    id: "faqCollapse-During-6",
-    question: "Berapa juri yang akan datang ke booth peserta offline kak?",
-    answer:
-      "Sama seperti penjurian online, akan ada 2 juri yang menjurikan setiap tim. Dan setelah selesai dijurikan kamu akan diberikan stiker sebagai tanda booth kamu sudah dijurikan, pastikan kamu mendapatkan 2 stiker ya",
-  },
-  {
-    no: "7",
-    datatarget: "#faqCollapse-During-7",
-    id: "faqCollapse-During-7",
-    question: "Apakah setelah dijurikan kami bisa langsung merapikan booth kami?",
-    answer:
-      "Kamu bisa mulai merapikan booth ketika semua tim sudah selesai dijurikan ya, jadi kalau kamu sudah selesai dijurikan kamu bisa berkunjung dulu ke booth peserta lain",
-  },
 ];
 
 const data3 = [
