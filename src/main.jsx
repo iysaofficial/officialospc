@@ -1,11 +1,10 @@
-
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages";
 import Faq from "./pages/faq.jsx";
 
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />
@@ -18,10 +17,11 @@ const router = createBrowserRouter ([
     path: "/faq",
     element: <Faq />
   }
+]);
 
-])
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
