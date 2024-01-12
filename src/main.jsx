@@ -4,16 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages";
 import Faq from "./pages/faq.jsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-  {
-    path: "/faq",
-    element: <Faq />
-  }
-]);
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <Home />
+//   },
+//   {
+//     path: "/faq",
+//     element: <Faq />
+//   }
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
