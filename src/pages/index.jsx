@@ -1,7 +1,6 @@
-import React from 'react'
-// import ReactDOM from 'react-dom/client'
 import Navigation from '../component/navigation.jsx'
 import Footer from '../component/footer.jsx'
+
 // Import Content
 import MainHero from '../component/mainhero.jsx'
 import Organized from '../component/organized.jsx'

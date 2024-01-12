@@ -42,7 +42,7 @@ const contact = () => {
                                     <p className="">
                                         <span className="icon"><i className="fas fa-envelope"></i></span> Alamat Email:
                                     </p>
-                                    <a href="mailto:ospc.iysa@gmail.com">ospc.iysa@gmail.com</a>
+                                    <a href="mailto:ospc.iysa@gmail.com">iysa.ospc@gmail.com</a>
                                 </div>
                             </div>
                         </div>

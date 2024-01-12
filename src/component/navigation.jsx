@@ -72,7 +72,7 @@ const navigation = () => {
                                     <a className="nav-item nav-link" href="/#contact">Kontak </a>
                                 </div>
                                 <div className='ms-lg-3'>
-                                    <a href="" className="btn btn-primary btn-action"> Buku Panduan </a>
+                                    <a href="https://drive.google.com/file/d/1TJu8FK3VoycIMHv0qAJ0zWXSBeKi3-Jf/view?usp=sharing" target='_blank' className="btn btn-primary btn-action"> Buku Panduan </a>
                                 </div>
                             </div>
                         </div>

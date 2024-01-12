@@ -14,7 +14,7 @@ const footer = () => {
                                                 class="main-logo"
                                             />
                                             <p>
-                                            OSPC 2024 adalah ajang kompetisi bagi peneliti muda Indonesia berusia 13-20 tahun untuk mempresentasikan penelitian mereka, memperluas pengetahuan, dan mengasah kemampuan berkomunikasi. Juara OSPC 2024 akan mewakili Indonesia di ajang internasional IYSA, membuka peluang bersaing di tingkat global.
+                                            OSPC adalah ajang kompetisi bagi peneliti muda Indonesia berusia 13-20 tahun untuk mempresentasikan penelitian mereka, memperluas pengetahuan, dan mengasah kemampuan berkomunikasi. Juara OSPC akan mewakili Indonesia di ajang internasional IYSA, membuka peluang bersaing di tingkat global.
                                             </p>
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@ const footer = () => {
                                                 <li>
                                                     <a href="mailto:iysa.ospc@gmail.com"
                                                         ><i class="fa fa-envelope me-1"></i>
-                                                        ospc.iysa@gmail.com
+                                                        iysa.ospc@gmail.com
                                                     </a>
                                                 </li>
                                                 <li>

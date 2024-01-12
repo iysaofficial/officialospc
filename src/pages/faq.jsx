@@ -2,7 +2,6 @@ import "../assets/css/styles.css"
 import CompFaq from "../component/CompFaq";
 import Navigation from "../component/navigation";
 import Footer from "../component/footer";
-import Image from "../component/image";
 
 const faq = () => {
     
@@ -10,7 +9,6 @@ const faq = () => {
                 <>
                 <Navigation />
                 <CompFaq />
-                {/* <Image /> */}
                 <Footer />
                 </>
             );
