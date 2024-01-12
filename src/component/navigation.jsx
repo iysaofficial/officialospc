@@ -1,0 +1,84 @@
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+// Import CSS
+import "../assets/css/styles.css"
+
+const navigation = () => {
+    const handleAboutClick = (e) => {
+        e.preventDefault();
+    
+        // Mendapatkan id dari href
+        const targetId = e.target.getAttribute('href').substring(1);
+    
+        // Mendapatkan elemen dengan id "about"
+        const targetElement = document.getElementById(targetId);
+    
+        // Scroll ke elemen tersebut
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+            return (
+                // Navbar 
+                <section>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                        <div className="container">
+                            <img src="./src/assets/Logo/OSPC-Logo.WebP" width="100" />
+                            <button
+                                className="navbar-toggler"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#navbarNavAltMarkup"
+                                aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                className="collapse navbar-collapse justify-content-center"
+                                id="navbarNavAltMarkup"
+                            >
+                                <div className="navbar-nav">
+                                    <a className="nav-item nav-link" href="/">Utama</a>
+                                    <a className="nav-item nav-link" href="/#about">Tentang</a>
+                                    {/* <a className="nav-item nav-link" href="#">Liputan Media</a> */}
+                                    <NavDropdown title="Galeri" id="nav-dropdown">
+                                        <NavDropdown.Item eventKey="3.1" href='https://drive.google.com/drive/folders/12NlMzG5aGikdjkfiZWr8DkTf3kP3ts6y?usp=drive_link' target='_blank'>2023</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="3.2" href='https://drive.google.com/drive/folders/1SKKSld11PoC9FdNb62t0aBWsorrMzB0T?usp=sharing ' target='_blank'>2022</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="3.3" href='https://drive.google.com/drive/folders/13hKaXwcUTJctuG07e7YjrWhKwMg4IqWK?usp=sharing' target='_blank'>2021</NavDropdown.Item>
+                                        {/* <NavDropdown.Divider />
+                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
+                                    </NavDropdown>
+                                    <NavDropdown title="Kurasi" id="nav-dropdown">
+                                        <NavDropdown.Item eventKey="4.1" href='https://drive.google.com/drive/folders/1bBXVRxZOhlbPvyKZ4lM0irgOPOZISBZw?usp=sharing' target='_blank'>2023</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.2" href='https://drive.google.com/drive/folders/1TVp5jP9C_CSNBWLncR0IFH4_kwiL-L9m?usp=sharing' target='_blank'>2022</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.3" href='https://drive.google.com/drive/folders/15mh-RGRblGzinXEGvSLY6E77M1JJmMgh?usp=sharing
+                                        2022' target='_blank'>2021</NavDropdown.Item>
+                                        {/* <NavDropdown.Divider />
+                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
+                                    </NavDropdown>
+                                    <NavDropdown title="Daftar Pemenang" id="nav-dropdown">
+                                        <NavDropdown.Item eventKey="4.1" href='https://docs.google.com/spreadsheets/d/1ngRh3C1gcJZrkyBvfKQrgVEJmmGb2iXl8dQPlpLm2QU/edit#gid=0' target='_blank'>2023</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.2" href='https://docs.google.com/spreadsheets/d/1M_SIjLNEs1RVe-XpIyjywj_7UGMs93Q8/edit#gid=274777717' target='_blank' >2022</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.3" href='https://drive.google.com/file/d/1m5GSTDLzDWgT8GdW3QRRRb4gJhznlups/view?usp=sharing' target='_blank'>2021</NavDropdown.Item>
+                                        
+                                        
+                                        {/* <NavDropdown.Divider />
+                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
+                                    </NavDropdown>
+                                    <a className="nav-item nav-link" href="/faq">FAQ </a>
+                                    <a className="nav-item nav-link" href="/#contact">Kontak </a>
+                                </div>
+                                <div className='ms-lg-3'>
+                                    <a href="" className="btn btn-primary btn-action"> Buku Panduan </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </section>
+            );
+        };
+        
+        export default navigation;

@@ -1,0 +1,24 @@
+{
+    "faq1": [
+      {
+        "id": 1,
+        "question": "Accordion Item #1 (FAQ 1)",
+        "answer": "This is the first item's accordion body for FAQ 1."
+      }
+    ],
+    "faq2": [
+      {
+        "id": 1,
+        "question": "Accordion Item #1 (FAQ 2)",
+        "answer": "This is the first item's accordion body for FAQ 2."
+      }
+    ],
+    "faq3": [
+      {
+        "id": 1,
+        "question": "Accordion Item #1 (FAQ 3)",
+        "answer": "This is the first item's accordion body for FAQ 3."
+      }
+    ]
+  }
+  

@@ -1,0 +1,56 @@
+import "../assets/css/styles.css"
+
+
+const contact = () => {
+            return (
+                // contact 
+                <section className="contact-section" id="contact">
+                    <div className="container">
+                        <div className="contact-wrapper">
+                            <h1 className="">Hubungi Kami</h1>
+                            <hr style={{ border: '3px solid' }} />
+                        </div>
+                        <div className="contact-input row">
+                            <div className="input-wrapper col-lg-8 mb-3 mb-lg-0">
+                                <p>Silakan isi formulir di bawah ini untuk mengirimkan email kepada kami dan kami akan membalas Anda sesegera mungkin.</p>
+                                <div className="input-first mt-3">
+                                    <input className="input-box" type="text" placeholder="Nama Lengkap"/>
+                                    <input className="input-box" type="email" placeholder="Alamat Email"/>
+                                </div>
+                                <div className="input-second mt-3">
+                                    <textarea type="text" rows={4} className="form-control" placeholder="Pesan / Pertanyaan"/>
+                                </div>
+                                <div className="btn-submit">
+                                    <button type="submit" className=" btn btn-primary btn-action">Kirim</button>
+                                </div>
+                            </div>
+                            <div className="contact-info col-lg-4">
+                                <h4>Kontak Info</h4>
+                                <div className="contact-text">
+                                    <p className="">
+                                        <span className="icon"><i className="fas fa-map-marker"></i></span> Alamat:
+                                    </p>
+                                    <a href="https://maps.app.goo.gl/J4HZU8aZeLwXx7Fx7">Jalan Kemang No. 63 RT. 3 RW. 06 Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat 16511, Indonesia.</a>
+                                </div>
+                                <div className="contact-text mt-2">
+                                    <p className="">
+                                        <span className="icon"><i className="fas fa-phone-volume"></i></span> No Telp:
+                                    </p>
+                                    <a href="tel:+6281770914129">+6281770914129</a>
+                                </div>
+                                <div className="contact-text mt-2">
+                                    <p className="">
+                                        <span className="icon"><i className="fas fa-envelope"></i></span> Alamat Email:
+                                    </p>
+                                    <a href="mailto:ospc.iysa@gmail.com">ospc.iysa@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contact-wrapper-icon row">
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+        
+        export default contact;
