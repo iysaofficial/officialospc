@@ -14,7 +14,7 @@ const footer = () => {
                                                 className="main-logo"
                                             />
                                             <p>
-                                            OSPC adalah ajang kompetisi bagi peneliti muda Indonesia berusia 13-20 tahun untuk mempresentasikan penelitian mereka, memperluas pengetahuan, dan mengasah kemampuan berkomunikasi. Juara OSPC akan mewakili Indonesia di ajang internasional IYSA, membuka peluang bersaing di tingkat global.
+                                            Online Science Project Competition (OSPC) merupakan ajang adu kemampuan para peneliti muda berusia 13-20 tahun dalam memperlihatkan hasil penelitian yang telah mereka lakukan dalam bentuk karya tulis ilmiah.
                                             </p>
                                         </div>
                                     </div>
