@@ -9,7 +9,7 @@ const footer = () => {
                                     <div className="col-lg-3 col-md-6 col-sm-6">
                                         <div className="footer-area-content">
                                             <img
-                                                src="./src/assets/Logo/OSPC-Logo.WebP"
+                                                src="./asset/Logo/OSPC-Logo.WebP"
                                                 alt="logo"
                                                 className="main-logo"
                                             />

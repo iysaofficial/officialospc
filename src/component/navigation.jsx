@@ -23,7 +23,7 @@ const navigation = () => {
                 <section>
                     <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
                         <div className="container">
-                            <img src="./src/assets/Logo/OSPC-Logo.WebP" width="100" />
+                            <img src="./asset/Logo/OSPC-Logo.WebP" width="100" />
                             <button
                                 className="navbar-toggler"
                                 type="button"
