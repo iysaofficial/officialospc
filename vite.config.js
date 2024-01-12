@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-bootstrap/Nav'], // Tambahkan modul yang perlu di-externalize di sini
+      external: ['react-bootstrap/Nav','react-bootstrap/NavDropdown'], // Tambahkan modul yang perlu di-externalize di sini
     },
   },
 });
