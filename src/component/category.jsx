@@ -20,7 +20,7 @@ const category = () => {
                                 <p>Social Science</p>
                             </div>
                             <div className="category-icon col-lg-4 col-6 text-center">
-                                <img className="img-fluid" src="./asset/category/EngineeringPhysics.Webp" alt="" />
+                                <img className="img-fluid" src="./asset/category/EngineeringPhysics.WebP" alt="" />
                                 <p className="text-center">Physics and Engineering</p>
                             </div>
                             {/* <div className="category-icon text-center col-lg-4">

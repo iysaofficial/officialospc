@@ -11,7 +11,7 @@ const organized = () => {
                                 <h1>Organized By</h1>
                             </div>
                             <div className="content-box">
-                                <img src="./asset/Logo/logoIYSA.WebP" alt="" />
+                                <img src="./asset/Logo/LogoIYSA.WebP" alt="" />
                                 {/* <img src="./src/assets/Logo/logoIYSA.WebP" alt="" />
                                 <img src="./src/assets/Logo/logoIYSA.WebP" alt="" /> */}
                             </div>
