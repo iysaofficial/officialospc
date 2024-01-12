@@ -20,7 +20,7 @@ const mainhero = () => {
                             </div>
                             <div className="content-img col-lg-6">
                                 <div className="img-logo mx-auto">
-                                    <img src="./src/assets/Logo/OSPC-Logo.WebP" alt="" />
+                                    <img src="./asset/Logo/OSPC-Logo.WebP" alt="" />
                                 </div>
                             </div>
                         </div>

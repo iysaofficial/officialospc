@@ -12,15 +12,15 @@ const category = () => {
                         </div>
                         <div className="category-wrapper-icon row">
                             <div className="category-icon col-lg-4 col-6 text-center">
-                                <img className="img-fluid" src="./src/assets/category/LifeScience.WebP" alt="" />
+                                <img className="img-fluid" src="./asset/category/LifeScience.WebP" alt="" />
                                 <p className="text-center">Life Science</p>
                             </div>
                             <div className="category-icon col-lg-4 col-6 text-center">
-                                <img className="img-fluid" src="./src/assets/category/SocialScience.WebP" alt="" />
+                                <img className="img-fluid" src="./asset/category/SocialScience.WebP" alt="" />
                                 <p>Social Science</p>
                             </div>
                             <div className="category-icon col-lg-4 col-6 text-center">
-                                <img className="img-fluid" src="./src/assets/category/EngineeringPhysics.Webp" alt="" />
+                                <img className="img-fluid" src="./asset/category/EngineeringPhysics.Webp" alt="" />
                                 <p className="text-center">Physics and Engineering</p>
                             </div>
                             {/* <div className="category-icon text-center col-lg-4">

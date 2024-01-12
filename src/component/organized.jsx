@@ -11,7 +11,7 @@ const organized = () => {
                                 <h1>Organized By</h1>
                             </div>
                             <div className="content-box">
-                                <img src="./src/assets/Logo/logoIYSA.WebP" alt="" />
+                                <img src="./asset/Logo/logoIYSA.WebP" alt="" />
                                 {/* <img src="./src/assets/Logo/logoIYSA.WebP" alt="" />
                                 <img src="./src/assets/Logo/logoIYSA.WebP" alt="" /> */}
                             </div>
@@ -21,7 +21,7 @@ const organized = () => {
                                 <h1>Supported By</h1>
                             </div>
                             <div className="content-box">
-                                <img src="./src/assets/Logo/polines.png" alt="" />
+                                <img src="./asset/Logo/polines.png" alt="" />
                             </div>
                         </div>
                     </div>
