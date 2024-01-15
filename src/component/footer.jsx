@@ -34,7 +34,7 @@ const footer = () => {
 
                                     <div className="col-lg-3 col-md-6 col-sm-6">
                                         <div className="single-footer-widget">
-                                            <h5>Our Information</h5>
+                                            <h5>Informasi Tentang Kami</h5>
 
                                             <ul className="footer-quick-links address-link list-unstyled">
                                                 <li>
@@ -59,7 +59,7 @@ const footer = () => {
                                     </div>
                                     <div className="col-lg-3 col-md-6 col-sm-6">
                                         <div className="single-footer-widget">
-                                            <h5>Berlangganan Sosial Kami Untuk Mengikuti</h5>
+                                            <h5>Berlangganan Sosial Media Kami Untuk Mengikuti</h5>
                                             <ul className="footer-quick-links sosmed list-unstyled">
                                                 <li>
                                                     <a href="https://www.facebook.com/Indonesia-Young-scientist-Association-106523338057326" className="facebook" target="_blank"

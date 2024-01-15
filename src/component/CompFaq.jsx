@@ -191,7 +191,7 @@ const data = [
     id: "faqCollapse-3",
     question: "Upload berkas lomba di mana sih Minsa?",
     answer:
-      "Link drive untuk upload berkas dan link untuk upload bukti pembayaran akan dicantumkan di invoice. Kalian akan mendapatkan invoice seperti ini",
+      "Link drive untuk upload berkas dan link untuk upload bukti pembayaran akan dicantumkan di invoice.",
     gambar:"./src/assets/ContohInvoice.jpg",
   },
   {
