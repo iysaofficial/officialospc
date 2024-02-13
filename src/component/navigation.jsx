@@ -59,8 +59,8 @@ const navigation = () => {
                                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
                                     </NavDropdown>
                                     <NavDropdown title="Daftar Pemenang" id="nav-dropdown">
-                                        <NavDropdown.Item eventKey="4.1" href='https://docs.google.com/spreadsheets/d/1ngRh3C1gcJZrkyBvfKQrgVEJmmGb2iXl8dQPlpLm2QU/edit#gid=0' target='_blank'>2023</NavDropdown.Item>
-                                        <NavDropdown.Item eventKey="4.2" href='https://docs.google.com/spreadsheets/d/1M_SIjLNEs1RVe-XpIyjywj_7UGMs93Q8/edit#gid=274777717' target='_blank' >2022</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.1" href='https://drive.google.com/file/d/17Vsf84xLIt7DgMSkwTK34-DW_1bDekIU/view?usp=sharing' target='_blank'>2023</NavDropdown.Item>
+                                        <NavDropdown.Item eventKey="4.2" href='https://drive.google.com/file/d/177z2HpP2RftH7_E3gkaocklo1pofcxYP/view?usp=sharing' target='_blank' >2022</NavDropdown.Item>
                                         <NavDropdown.Item eventKey="4.3" href='https://drive.google.com/file/d/1Qzzg50LPdh83hRQEVtD5bXsMEL7xtu42/view?usp=drive_link' target='_blank'>2021</NavDropdown.Item>
                                         
                                         
