@@ -131,6 +131,15 @@ const navigation = () => {
                 {/* <NavDropdown.Divider />
                                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
               </NavDropdown>
+              <NavDropdown title="Sertifikat" id="nav-dropdown">
+                <NavDropdown.Item
+                  eventKey="4.1"
+                  href="https://drive.google.com/drive/folders/1aFsn1EYvInUzGqU51Vcl5sc--6lUXhO1?usp=sharing"
+                  target="_blank"
+                >
+                  Sertifikat Supervisor
+                </NavDropdown.Item>
+              </NavDropdown>
               <a className="nav-item nav-link" href="/faq">
                 FAQ{" "}
               </a>
