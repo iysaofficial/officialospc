@@ -15,7 +15,7 @@ const mainhero = () => {
                                     <p>Ikuti OSPC 2024 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>
                                 <div className="mt-2">
-                                    <a href="/" className="btn btn-primary btn-action">Pendaftaran Ditutup</a>
+                                    <a href="/" className="btn btn-primary btn-action">Segera Hadir 2025</a>
                                 </div>
                             </div>
                             <div className="content-img col-lg-6">
