@@ -12,7 +12,7 @@ const mainhero = () => {
                                 <div>
                                     <h1 className="fw-weight-800">Segera Hadir OSPC 2025</h1>
                                     <hr style={{ border: '3px solid' }} />
-                                    <p>Ikuti OSPC 2024 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
+                                    <p>Ikuti OSPC 2025 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>
                                 <div className="mt-2">
                                     <a href="/" className="btn btn-primary btn-action">Segera Hadir 2025</a>
