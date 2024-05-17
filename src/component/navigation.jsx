@@ -73,6 +73,13 @@ const navigation = () => {
                                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Kurasi" id="nav-dropdown">
+              <NavDropdown.Item
+                  eventKey="4.1"
+                  href="https://drive.google.com/drive/folders/1lAdeJ8FXjoU4ySAcQqZMTBkWZb_4DIZF?usp=drive_link"
+                  target="_blank"
+                >
+                  2024
+                </NavDropdown.Item>
                 <NavDropdown.Item
                   eventKey="4.1"
                   href="https://drive.google.com/drive/folders/1bBXVRxZOhlbPvyKZ4lM0irgOPOZISBZw?usp=sharing"
