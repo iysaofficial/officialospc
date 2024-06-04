@@ -12,8 +12,6 @@ const organized = () => {
                             </div>
                             <div className="content-box">
                                 <img src="./asset/Logo/LogoIYSA.WebP" alt="" />
-                                {/* <img src="./src/assets/Logo/logoIYSA.WebP" alt="" />
-                                <img src="./src/assets/Logo/logoIYSA.WebP" alt="" /> */}
                             </div>
                         </div>
                         <div className="supported-wrapper row mt-5">

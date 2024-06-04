@@ -105,39 +105,9 @@ const navigation = () => {
                 {/* <NavDropdown.Divider />
                                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
               </NavDropdown>
-              <NavDropdown title="Daftar Pemenang" id="nav-dropdown">
-                <NavDropdown.Item
-                  eventKey="4.1"
-                  href="https://drive.google.com/file/d/1Q_dVNEB54SW7XnELCxWQncLg1JH2SQ5l/view?usp=sharing"
-                  target="_blank"
-                >
-                  2024
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  eventKey="4.1"
-                  href="https://drive.google.com/file/d/17Vsf84xLIt7DgMSkwTK34-DW_1bDekIU/view?usp=sharing"
-                  target="_blank"
-                >
-                  2023
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  eventKey="4.2"
-                  href="https://drive.google.com/file/d/177z2HpP2RftH7_E3gkaocklo1pofcxYP/view?usp=sharing"
-                  target="_blank"
-                >
-                  2022
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  eventKey="4.3"
-                  href="https://drive.google.com/file/d/1Qzzg50LPdh83hRQEVtD5bXsMEL7xtu42/view?usp=drive_link"
-                  target="_blank"
-                >
-                  2021
-                </NavDropdown.Item>
-
-                {/* <NavDropdown.Divider />
-                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
-              </NavDropdown>
+              <a className="nav-item nav-link" href="/lowtahun">
+                Daftar Pemenang{" "}
+              </a>
               <NavDropdown title="Sertifikat" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="4.1"

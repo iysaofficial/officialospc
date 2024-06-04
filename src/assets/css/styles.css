@@ -321,17 +321,15 @@ body p {
 /* FAQ Start */
 .faq-section {
     padding: 75px 25px 75px 25px  ;
-    /* background-color: var(--warna-sekunder); */
+    /* background: linear-gradient(50.48deg,#006838 -2.06%,#04aa57 93.55%); */
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding: 10vh 0 0;
 }
 .faq-section .container{
     padding: 75px 25px ;
 }
 
-.faq-section {
-    background: #fdfdfd;
-    min-height: 100vh;
-    padding: 10vh 0 0;
-  }
   
   .faq-title h2 {
     position: relative;
