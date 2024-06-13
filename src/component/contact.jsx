@@ -30,7 +30,7 @@ const contact = () => {
                                     <p className="">
                                         <span className="icon"><i className="fas fa-map-marker"></i></span> Alamat:
                                     </p>
-                                    <a href="https://maps.app.goo.gl/J4HZU8aZeLwXx7Fx7">Jalan Kemang No. 63 RT. 3 RW. 06 Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat 16511, Indonesia.</a>
+                                    <a href="https://maps.app.goo.gl/J4HZU8aZeLwXx7Fx7">Jalan Kemang RT. 3 RW. 06 Pasir Putih, Kecamatan Sawangan, Kota Depok, Jawa Barat 16511, Indonesia.</a>
                                 </div>
                                 <div className="contact-text mt-2">
                                     <p className="">

@@ -244,12 +244,12 @@ body p {
     border-radius: 50%;
     max-width: 80%;    
     margin: 0 auto;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in-out;
     z-index: 1;
 }
 .category-section .category-icon img:hover{
     border-radius: 5%;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     z-index: 20;
 }

@@ -17,8 +17,7 @@ const lowtahun = () => {
                   2024{" "}
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/17Vsf84xLIt7DgMSkwTK34-DW_1bDekIU/view?usp=sharing"
-                  target="_blank"
+                  href="/jenjang23"
                   className="btn btn-action m-3"
                 >
                   2023{" "}

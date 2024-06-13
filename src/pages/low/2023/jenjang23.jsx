@@ -2,7 +2,7 @@ import React from "react";
 import Navigation from "../../../component/navigation.jsx";
 import Footer from "../../../component/footer.jsx";
 
-const jenjang24 = () => {
+const Jenjang23 = () => {
   return (
     <>
       <Navigation />
@@ -10,29 +10,36 @@ const jenjang24 = () => {
         <div className="container">
           <div className="row">
             <div className="faq-title text-center pb-3">
-              <h2>Daftar Pemenang 2024</h2>
+              <h2>Daftar Pemenang 2023</h2>
               <div className="">
                 <h3>Pilih berdasarkan jenjang event yang kalian ikuti</h3>
                 <a
-                  href="https://drive.google.com/file/d/1xYAL-S5C9M5zhDLFdzoQyoQMkth6VyjA/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1o86f_rdhOGom7XQEfqiIbwkWm6GuKN1s/view?usp=sharing"
                   target="_blank"
                   className="btn btn-action m-3"
                 >
                   Universitas{" "}
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1h38sqkk46V--jIqLdQbn0ORS9w5LOE8u/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1c55AfiqkU5WmN1tmNBFQ2STfeOcGhl_m/view?usp=sharing"
                   target="_blank"
                   className="btn btn-action m-3"
                 >
                   Sekolah Menengah Atas (SMA){" "}
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1Nt5WElDUzXZ-otaCpXPMnAK3-Zi_r885/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1HZGogI4Py0JB5gjXHaoEe9Nvo91Y_L7P/view?usp=sharing"
                   target="_blank"
                   className="btn btn-action m-3"
                 >
                   Sekolah Menengah Pertama (SMP){" "}
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1gfqkMxbHBQ73q5sPPL_Earys_uy8dbYt/view?usp=sharing"
+                  target="_blank"
+                  className="btn btn-action m-3"
+                >
+                  Sekolah Dasar (SD){" "}
                 </a>
               </div>
             </div>
@@ -44,4 +51,4 @@ const jenjang24 = () => {
   );
 };
 
-export default jenjang24;
+export default Jenjang23;
