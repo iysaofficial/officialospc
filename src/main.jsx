@@ -8,6 +8,9 @@ import Lowtahun from "./pages/low/lowtahun.jsx";
 import Jenjang24 from "./pages/low/2024/jenjang24.jsx";
 import Jenjang23 from "./pages/low/2023/jenjang23.jsx";
 
+import HomeRegist from "./pages/registration/homeregist.jsx";
+import Indonesiaparticipants from "./pages/registration/indonesiaparticipants.jsx"
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "/jenjang23",
     element: <Jenjang23 />
+  },
+  {
+    path: "/homeregist",
+    element: <HomeRegist />
+  },
+  {
+    path: "/indonesiaparticipants",
+    element: <Indonesiaparticipants />
   },
 ]);
 

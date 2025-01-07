@@ -34,10 +34,9 @@ const footer = () => {
                   </li>
                   <li>
                     <a
-                      href="https://registasi-ospc-2024.vercel.app/"
-                      target="_blank"
+                      href="/homeregist"
                     >
-                      Link Registrasi
+                      Tautan Registrasi
                     </a>
                   </li>
                 </ul>
@@ -61,7 +60,12 @@ const footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+6281770914129">
+                    <a href="https://api.whatsapp.com/send/?phone=6288213248890&text&type=phone_number&app_absent=0" target="_blank">
+                      <i className="fa fa-phone me-1"></i> +6288213248890
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://api.whatsapp.com/send/?phone=6281770914129&text&type=phone_number&app_absent=0" target="_blank">
                       <i className="fa fa-phone me-1"></i> +6281770914129
                     </a>
                   </li>
@@ -120,13 +124,6 @@ const footer = () => {
                 <i className="far fa-copyright me-1"></i>2024 OSPC Official. All
                 Rights Reserved
               </p>
-
-              {/* <div className="col-lg-6 col-md-6">
-                                            <ul className="list-unstyled">
-                                                <li><a routerLink="/">Privacy Policy</a></li>
-                                                <li><a routerLink="/">Terms & Conditions</a></li>
-                                            </ul>
-                                        </div> */}
             </div>
           </div>
         </div>

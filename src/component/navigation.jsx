@@ -4,20 +4,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "../assets/css/styles.css";
 
 const navigation = () => {
-  const handleAboutClick = (e) => {
-    e.preventDefault();
 
-    // Mendapatkan id dari href
-    const targetId = e.target.getAttribute("href").substring(1);
-
-    // Mendapatkan elemen dengan id "about"
-    const targetElement = document.getElementById(targetId);
-
-    // Scroll ke elemen tersebut
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   return (
     // Navbar
     <section>
@@ -46,7 +33,6 @@ const navigation = () => {
               <a className="nav-item nav-link" href="/#about">
                 Tentang
               </a>
-              {/* <a className="nav-item nav-link" href="#">Liputan Media</a> */}
               <NavDropdown title="Galeri" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="3.1"
@@ -69,11 +55,9 @@ const navigation = () => {
                 >
                   2021
                 </NavDropdown.Item>
-                {/* <NavDropdown.Divider />
-                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
               </NavDropdown>
               <NavDropdown title="Kurasi" id="nav-dropdown">
-              <NavDropdown.Item
+                <NavDropdown.Item
                   eventKey="4.1"
                   href="https://drive.google.com/drive/folders/1lAdeJ8FXjoU4ySAcQqZMTBkWZb_4DIZF?usp=drive_link"
                   target="_blank"
@@ -102,8 +86,9 @@ const navigation = () => {
                 >
                   2021
                 </NavDropdown.Item>
-                {/* <NavDropdown.Divider />
-                                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
+                <NavDropdown.Item eventKey="4.4">
+                  Separated link
+                </NavDropdown.Item>{" "}
               </NavDropdown>
               <a className="nav-item nav-link" href="/lowtahun">
                 Daftar Pemenang{" "}
