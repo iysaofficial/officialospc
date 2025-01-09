@@ -25,13 +25,13 @@ export default function Indonesiaparticipants() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Social Science":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 200.000");
         break;
       case "Life Sciences":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 200.000");
         break;
       case "PHYSICS AND ENGINEERING":
-        setCategoryPrice("Rp 950.000");
+        setCategoryPrice("Rp 200.000");
         break;
       default:
         setCategoryPrice("");
