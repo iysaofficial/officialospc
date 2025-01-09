@@ -111,7 +111,7 @@ const navigation = () => {
             </div>
             <div className="ms-lg-3">
               <a
-                href="https://drive.google.com/file/d/1TJu8FK3VoycIMHv0qAJ0zWXSBeKi3-Jf/view?usp=sharing"
+                href="https://drive.google.com/file/d/1D0P_oI6_Lwv6_IVhGpLl5B3r8sYvQg7k/view?usp=sharing"
                 target="_blank"
                 className="btn btn-primary btn-action"
               >

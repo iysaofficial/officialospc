@@ -33,10 +33,15 @@ const footer = () => {
                     </a>
                   </li>
                   <li>
+                    <a href="/homeregist">Tautan Registrasi</a>
+                  </li>
+                  <li>
                     <a
-                      href="/homeregist"
+                      href="https://drive.google.com/file/d/1D0P_oI6_Lwv6_IVhGpLl5B3r8sYvQg7k/view?usp=sharing"
+                      target="_blank"
                     >
-                      Tautan Registrasi
+                      {" "}
+                      Buku Panduan{" "}
                     </a>
                   </li>
                 </ul>
@@ -50,7 +55,8 @@ const footer = () => {
                 <ul className="footer-quick-links address-link list-unstyled">
                   <li>
                     <a href="https://goo.gl/maps/gEzFyE9gtXEyRfA26">
-                      <i className="fa fa-map-marker me-1"></i> Jl. Kemang RT 03 RW 06
+                      <i className="fa fa-map-marker me-1"></i> Jl. Kemang RT 03
+                      RW 06
                     </a>
                   </li>
                   <li>
@@ -60,12 +66,18 @@ const footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://api.whatsapp.com/send/?phone=6288213248890&text&type=phone_number&app_absent=0" target="_blank">
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=6288213248890&text&type=phone_number&app_absent=0"
+                      target="_blank"
+                    >
                       <i className="fa fa-phone me-1"></i> +6288213248890
                     </a>
                   </li>
                   <li>
-                    <a href="https://api.whatsapp.com/send/?phone=6281770914129&text&type=phone_number&app_absent=0" target="_blank">
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=6281770914129&text&type=phone_number&app_absent=0"
+                      target="_blank"
+                    >
                       <i className="fa fa-phone me-1"></i> +6281770914129
                     </a>
                   </li>
