@@ -143,7 +143,7 @@ export default function Indonesiaparticipants() {
                       Masukan nama ketua dan anggota tim dengan nama ketua tim
                       diawal, dengan format seperti berikut :
                     </p>
-                    <p>Note : maksimal 5 anggota + 1 ketua tim</p>
+                    <p>Note : maksimal 2 anggota + 1 ketua tim</p>
                     <h6>Kamal Putra</h6>
                     <h6>Ranu Ramadhan</h6>
                     <h6>Irsyad Zaidan</h6>
