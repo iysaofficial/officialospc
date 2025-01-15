@@ -63,7 +63,7 @@ function HomeRegist() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2>Terms & Conditions</h2>
+            <h2>Syarat & Ketentuan</h2>
             <div>{termsContent}</div> {/* Isi dinamis */}
             <div className="checkbox">
               <input
@@ -72,17 +72,17 @@ function HomeRegist() {
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms"> I agree to the Terms & Conditions</label>
+              <label htmlFor="terms">Saya menyetujui Syarat & Ketentuan</label>
             </div>
             <div className="modal-actions">
               <button
                 className="btn btn-secondary"
                 onClick={() => setShowModal(false)}
               >
-                Cancel
+                Kembali
               </button>
               <button className="btn btn-primary" onClick={handleAccept}>
-                Accept & Proceed
+                Terima & Proses 
               </button>
             </div>
           </div>
