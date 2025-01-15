@@ -47,32 +47,41 @@ export default function Indonesiaparticipants() {
   };
 
   useEffect(() => {
-    const scriptURL = "https://script.google.com/macros/s/AKfycbx0OMIJI_jT2ds_WZIciX-p4aci5SRdwdVQ-s_622nB0-a4ZzkJdJh3xsexDZav89fpQg/exec";
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbx0OMIJI_jT2ds_WZIciX-p4aci5SRdwdVQ-s_622nB0-a4ZzkJdJh3xsexDZav89fpQg/exec";
 
     const form = document.forms["regist-form"];
-    var buttonCounter = 0;
+    let buttonCounter = 0;
 
     if (form) {
       const handleSubmit = async (e) => {
         e.preventDefault();
-        if (buttonCounter == 0) {
+        if (buttonCounter === 0) {
+          buttonCounter++; // Cegah klik ganda
+          setIsLoading(true); // Tampilkan loader
           try {
-            buttonCounter++;
-            await fetch(scriptURL, {
+            const response = await fetch(scriptURL, {
               method: "POST",
               body: new FormData(form),
             });
-            // Setelah berhasil mengirim data, arahkan pengguna ke halaman lain
-            window.location.href = "/homeregist"; // Gantikan dengan URL halaman sukses Anda
+            if (response.ok) {
+              setStatusMessage("Data berhasil dikirim!");
+              form.reset(); // Reset form hanya jika pengiriman sukses
+              setTimeout(() => {
+                window.location.href = "/thankyou"; // Redirect setelah 1 detik
+              }, 1000);
+            } else {
+              setStatusMessage("Terjadi kesalahan saat mengirim data.");
+            }
           } catch (error) {
-            console.error("Error saat mengirim data:", error);
-            // Handle error jika diperlukan
+            setStatusMessage("Terjadi kesalahan saat mengirim data.");
+          } finally {
+            setIsLoading(false); // Sembunyikan loader
+            buttonCounter = 0; // Reset counter untuk klik selanjutnya
           }
         }
-        form.reset();
       };
       form.addEventListener("submit", handleSubmit);
-      // Membersihkan event listener saat komponen dilepas
       return () => {
         form.removeEventListener("submit", handleSubmit);
       };
@@ -432,7 +441,6 @@ export default function Indonesiaparticipants() {
                   </select>
                 </div>
 
-
                 {/* Input Lainnya */}
                 <div className="input-box">
                   <label htmlFor="YES_NO" className="form-label">
@@ -561,6 +569,18 @@ export default function Indonesiaparticipants() {
                 <input type="submit" value="KIRIM" />
               </div>
             </form>
+            
+            {/* Loader dan Status Message */}
+            {isLoading && (
+              <div className="overlay-loader">
+                <div className="loader"></div>
+                <div>
+                  {statusMessage && (
+                    <p className="status-message">{statusMessage}</p>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
