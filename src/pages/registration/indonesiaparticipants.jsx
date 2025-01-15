@@ -10,6 +10,8 @@ export default function Indonesiaparticipants() {
   const maxProjectChars = 160; // batasan maksimal karakter
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categoryPrice, setCategoryPrice] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -569,7 +571,7 @@ export default function Indonesiaparticipants() {
                 <input type="submit" value="KIRIM" />
               </div>
             </form>
-            
+
             {/* Loader dan Status Message */}
             {isLoading && (
               <div className="overlay-loader">
