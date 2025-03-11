@@ -231,49 +231,49 @@ const data = [
   },
 ];
 
-const data2 = [
-  {
-    no: "1",
-    datatarget: "#faqCollapse-During-1",
-    id: "faqCollapse-During-1",
-    question: "Kapan jadwal presentasi akan diberikan oleh panitia?",
-    answer:
-      "Jadwal presentasi akan kami berikan selambatnya 2 hari sebelum penjurian berlangsung atau bisa juga lebih cepat, dan kami kirimkan melalui WA grup dan juga e-mail ketua tim.",
-  },
-  {
-    no: "2",
-    datatarget: "#faqCollapse-During-2",
-    id: "faqCollapse-During-2",
-    question:
-      "Presentasi online menggunakan aplikasi apa? Zoom, google meet atau yg lainnya?",
-    answer:
-      "Untuk penjurian online kami selalu memakai aplikasi Zoom ya teman-teman, dan pastikan aplikasi Zoom kamu sudah yang terbaru yaa.",
-  },
-  {
-    no: "3",
-    datatarget: "#faqCollapse-During-3",
-    id: "faqCollapse-During-3",
-    question: "Kapan link zoom akan diberikan oleh panitia?",
-    answer:
-      "Link Zoom akan kami berikan dihari penjurian, dan akan kami kirim berkala di grup sesuai jam presentasi tim kalian ",
-  },
-  {
-    no: "4",
-    datatarget: "#faqCollapse-During-4",
-    id: "faqCollapse-During-4",
-    question: "Berapa banyak akun zoom yang bisa join dan penamannya seperti apa?",
-    answer:
-      'Teman-teman bisa masuk ke Zoom maksimal dengan 5 akun untuk peserta, dan semua akun Zoom harus mengikuti format nama yang sudah  kami berikan yaitu "Nomor ruangan_Nama Ketua Tim_Nama Institusi"',
-  },
-  {
-    no: "5",
-    datatarget: "#faqCollapse-During-5",
-    id: "faqCollapse-During-5",
-    question: "Berapa durasi peserta melakukan presentasi?",
-    answer:
-      "Teman-teman akan diberikan waktu 15 menit untuk 1 sesi presentasi yang akan dibagi 2 yaitu 7 menit awal untuk presentasi dan 8 menit akhir untuk sesi tanya jawab dengan juri",
-  },
-];
+// const data2 = [
+//   {
+//     no: "1",
+//     datatarget: "#faqCollapse-During-1",
+//     id: "faqCollapse-During-1",
+//     question: "Kapan jadwal presentasi akan diberikan oleh panitia?",
+//     answer:
+//       "Jadwal presentasi akan kami berikan selambatnya 2 hari sebelum penjurian berlangsung atau bisa juga lebih cepat, dan kami kirimkan melalui WA grup dan juga e-mail ketua tim.",
+//   },
+//   {
+//     no: "2",
+//     datatarget: "#faqCollapse-During-2",
+//     id: "faqCollapse-During-2",
+//     question:
+//       "Presentasi online menggunakan aplikasi apa? Zoom, google meet atau yg lainnya?",
+//     answer:
+//       "Untuk penjurian online kami selalu memakai aplikasi Zoom ya teman-teman, dan pastikan aplikasi Zoom kamu sudah yang terbaru yaa.",
+//   },
+//   {
+//     no: "3",
+//     datatarget: "#faqCollapse-During-3",
+//     id: "faqCollapse-During-3",
+//     question: "Kapan link zoom akan diberikan oleh panitia?",
+//     answer:
+//       "Link Zoom akan kami berikan dihari penjurian, dan akan kami kirim berkala di grup sesuai jam presentasi tim kalian ",
+//   },
+//   {
+//     no: "4",
+//     datatarget: "#faqCollapse-During-4",
+//     id: "faqCollapse-During-4",
+//     question: "Berapa banyak akun zoom yang bisa join dan penamannya seperti apa?",
+//     answer:
+//       'Teman-teman bisa masuk ke Zoom maksimal dengan 5 akun untuk peserta, dan semua akun Zoom harus mengikuti format nama yang sudah  kami berikan yaitu "Nomor ruangan_Nama Ketua Tim_Nama Institusi"',
+//   },
+//   {
+//     no: "5",
+//     datatarget: "#faqCollapse-During-5",
+//     id: "faqCollapse-During-5",
+//     question: "Berapa durasi peserta melakukan presentasi?",
+//     answer:
+//       "Teman-teman akan diberikan waktu 15 menit untuk 1 sesi presentasi yang akan dibagi 2 yaitu 7 menit awal untuk presentasi dan 8 menit akhir untuk sesi tanya jawab dengan juri",
+//   },
+// ];
 
 const data3 = [
   {
