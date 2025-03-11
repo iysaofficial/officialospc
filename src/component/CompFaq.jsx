@@ -77,13 +77,13 @@ export default function Faq() {
               </div>
             </div>
 
-            <div className="col-md-6 offset-md-3">
+            {/* <div className="col-md-6 offset-md-3">
               <div className="faq-title text-center pb-3">
                 <br />
                 <br />
                 <h2>Selama event berlangsung</h2>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-md-12">
               <div className="faq" id="accordion">
