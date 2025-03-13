@@ -10,9 +10,9 @@ const mainhero = () => {
                         <div className="hero-wrapper row">
                             <div className="content-text col-lg-6">
                                 <div>
-                                    <h1 className="fw-weight-800">Tutup Pendaftaran OSPC 2025</h1>
+                                    <h1 className="fw-weight-800">Coming Soon 2026</h1>
                                     <hr style={{ border: '3px solid' }} />
-                                    <p>Ikuti OSPC 2025 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
+                                    <p>Ikuti OSPC 2026 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>
                                 <div className="mt-2">
                                     <a href="/" className="btn btn-primary btn-action">Tutup Pendaftaran</a>
