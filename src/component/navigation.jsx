@@ -96,7 +96,7 @@ const navigation = () => {
               <NavDropdown title="Sertifikat" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="4.1"
-                  href="https://drive.google.com/drive/folders/1aFsn1EYvInUzGqU51Vcl5sc--6lUXhO1?usp=sharing"
+                  href="https://drive.google.com/drive/folders/1eVopgA46Kbu2ZZXRVG6zP6Kt8RPcMKWb?usp=sharing"
                   target="_blank"
                 >
                   Sertifikat Supervisor
