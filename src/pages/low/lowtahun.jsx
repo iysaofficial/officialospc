@@ -13,13 +13,17 @@ const lowtahun = () => {
               <h2>Daftar Pemenang</h2>
               <div className="">
                 <h3>Pilih berdasarkan tahun acara yang Anda ikuti</h3>
+                <a
+                  href="https://drive.google.com/file/d/1Bai54vWPDlWHSsQuKaHMlRFKkN43kF2k/view?usp=sharing"
+                  target="blank"
+                  className="btn btn-action m-3"
+                >
+                  2025{" "}
+                </a>
                 <a href="/jenjang24" className="btn btn-action m-3">
                   2024{" "}
                 </a>
-                <a
-                  href="/jenjang23"
-                  className="btn btn-action m-3"
-                >
+                <a href="/jenjang23" className="btn btn-action m-3">
                   2023{" "}
                 </a>
                 <a
