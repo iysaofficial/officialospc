@@ -30,9 +30,21 @@ const navigation = () => {
               <a className="nav-item nav-link" href="/">
                 Utama
               </a>
-              <a className="nav-item nav-link" href="/#about">
-                Tentang
-              </a>
+              <NavDropdown title="Liputan Media" id="nav-dropdown">
+                <NavDropdown.Item
+                  eventKey="3.3"
+                  href="https://drive.google.com/file/d/1d7PuFr7mKMozXBsJaQD7TWyXmsLjdRA6/view?usp=sharing"
+                  target="_blank"
+                >
+                  Press Release 2025
+                </NavDropdown.Item>
+                {/* <NavDropdown.Item
+                  eventKey="3.3"
+                  href="/news"
+                >
+                  Berita
+                </NavDropdown.Item> */}
+              </NavDropdown>
               <NavDropdown title="Galeri" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="3.1"
@@ -57,6 +69,13 @@ const navigation = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Kurasi" id="nav-dropdown">
+                <NavDropdown.Item
+                  eventKey="4.1"
+                  href="https://drive.google.com/drive/folders/1P_wDXgpOP9Dp2RM82ntADIvlMzNUBJqS?usp=sharing"
+                  target="_blank"
+                >
+                  2025
+                </NavDropdown.Item>
                 <NavDropdown.Item
                   eventKey="4.1"
                   href="https://drive.google.com/drive/folders/1lAdeJ8FXjoU4ySAcQqZMTBkWZb_4DIZF?usp=drive_link"
@@ -86,9 +105,6 @@ const navigation = () => {
                 >
                   2021
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey="4.4">
-                  Separated link
-                </NavDropdown.Item>{" "}
               </NavDropdown>
               <a className="nav-item nav-link" href="/lowtahun">
                 Daftar Pemenang{" "}
