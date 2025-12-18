@@ -1,8 +1,10 @@
-import Navigation from '../../component/navigation.jsx'
-import Footer from '../../component/footer.jsx'
-
-import { useState } from "react";
-import { indonesiaTerms, internationalTerms } from "../../data/terms.jsx"
+import Navigation from "../../component/navigation.jsx";
+import Footer from "../../component/footer.jsx";
+import { useState, useEffect } from "react";
+import {
+  indonesiaOnlineTerms,
+  indonesiaOfflineTerms,
+} from "../../data/terms.jsx";
 
 function HomeRegist() {
   const [showModal, setShowModal] = useState(false);
@@ -18,42 +20,40 @@ function HomeRegist() {
 
   const handleAccept = () => {
     if (termsAccepted) {
+      sessionStorage.setItem("termsAccepted", "true"); // Menyimpan status setuju di sessionStorage
       setShowModal(false);
-      setTermsAccepted(false); // Reset checkbox untuk penggunaan berikutnya
-      window.location.href = redirectLink; // Redirect ke halaman
+      window.location.href = redirectLink;
     } else {
-      alert("Please agree to the Terms & Conditions to proceed.");
+      alert("Harap setujui Syarat & Ketentuan untuk melanjutkan.");
     }
   };
+
+  useEffect(() => {
+    const hasAcceptedTerms = sessionStorage.getItem("termsAccepted");
+    if (hasAcceptedTerms === "true") {
+      setTermsAccepted(true); // Set status sudah diterima
+    }
+  }, []);
 
   return (
     <>
       <Navigation />
-      {/* <PageBanner
-        pageTitle="Registration"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Home Registration"
-      /> */}
       <section className="homeregist-section">
         <div>
           <div className="wrapper">
             <div className="text-center">
               <h1 className="mx-auto">FORMULIR REGISTRASI</h1>
-              <h3 className="mx-auto mt-5 mb-2">
-                Registrasi untuk OSPC 2025 
-              </h3>
+              <h3 className="mx-auto mt-5 mb-2">Registrasi untuk OSPC 2026</h3>
             </div>
           </div>
           <div className="link-web mx-auto text-center">
             <button
               className="btn btn-custom text-center me-lg-5 m-2"
               onClick={() =>
-                handleOpenModal("/indonesiaparticipants", indonesiaTerms)
+                handleOpenModal("/indonesiaparticipants", indonesiaOnlineTerms)
               }
             >
-              Peserta Indonesia{" "}
-              <i className="fa-solid fa-earth-americas"></i>
+              Kompetisi Daring<i className="fa-solid fa-earth-americas"></i>
             </button>
           </div>
         </div>
@@ -63,16 +63,18 @@ function HomeRegist() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2>Syarat & Ketentuan</h2>
+            <h2 className="text-4xl">Syarat & Ketentuan</h2>
             <div>{termsContent}</div> {/* Isi dinamis */}
-            <div className="checkbox">
+            <div className="checkbox mt-2">
               <input
                 type="checkbox"
                 id="terms"
                 checked={termsAccepted}
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
-              <label htmlFor="terms">Saya menyetujui Syarat & Ketentuan</label>
+              <label htmlFor="terms">
+                Saya menyetujui Syarat & Ketentuan di atas
+              </label>
             </div>
             <div className="modal-actions">
               <button
@@ -82,7 +84,7 @@ function HomeRegist() {
                 Kembali
               </button>
               <button className="btn btn-primary" onClick={handleAccept}>
-                Terima & Proses 
+                Terima & Lanjutkan
               </button>
             </div>
           </div>

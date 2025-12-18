@@ -1,7 +1,7 @@
 import Navigation from "../../component/navigation.jsx";
 import Footer from "../../component/footer.jsx";
-
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Indonesiaparticipants() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
@@ -12,6 +12,12 @@ export default function Indonesiaparticipants() {
   const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedNamaSekolah, setselectedNamaSekolah] = useState("");
+  const maxSchoolChars = 500; // batasan maksimal karakter
+  const [showModal, setShowModal] = useState(false);
+  const [countdown, setCountdown] = useState(5);
+  const [canClick, setCanClick] = useState(false);
+  const navigate = useNavigate();
 
   const handleInputNameChange = (e) => {
     const { value } = e.target;
@@ -20,24 +26,10 @@ export default function Indonesiaparticipants() {
     }
   };
 
-  const handleCategoryChange = (e) => {
-    const value = e.target.value;
-    setSelectedCategory(value);
-
-    // Logika untuk menentukan harga berdasarkan kategori yang dipilih
-    switch (value) {
-      case "Social Science":
-        setCategoryPrice("Rp 200.000");
-        break;
-      case "Life Sciences":
-        setCategoryPrice("Rp 200.000");
-        break;
-      case "PHYSICS AND ENGINEERING":
-        setCategoryPrice("Rp 200.000");
-        break;
-      default:
-        setCategoryPrice("");
-        break;
+  const handleInputNameSchoolChange = (e) => {
+    const { value } = e.target;
+    if (value.length <= maxSchoolChars) {
+      setselectedNamaSekolah(value);
     }
   };
 
@@ -48,47 +40,103 @@ export default function Indonesiaparticipants() {
     }
   };
 
-  useEffect(() => {
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycbx0OMIJI_jT2ds_WZIciX-p4aci5SRdwdVQ-s_622nB0-a4ZzkJdJh3xsexDZav89fpQg/exec";
+    const handleCategoryChange = (e) => {
+      const value = e.target.value;
+      setSelectedCategory(value);
 
+      // Logika untuk menentukan harga berdasarkan kategori yang dipilih
+      switch (value) {
+        case "Online Science Project Competition - Kompetisi Daring":
+          setCategoryPrice("RP 250.000");
+          break;
+        default:
+          break;
+      }
+    };
+
+  useEffect(() => {
+    const termsAccepted = sessionStorage.getItem("termsAccepted");
+    if (!termsAccepted) {
+      alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
+      navigate("/homeregist"); // Navigasi ke halaman HomeIndo
+    }
+  }, [navigate]);
+
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxRFqF3qNKfmUaRt0aixA3m7nzIp0_SmDzA_exQPCGQI5oKJHO4a3wjeWN-GT_3EJOE/exec";
+
+  useEffect(() => {
     const form = document.forms["regist-form"];
-    let buttonCounter = 0;
 
     if (form) {
       const handleSubmit = async (e) => {
         e.preventDefault();
-        if (buttonCounter === 0) {
-          buttonCounter++; // Cegah klik ganda
-          setIsLoading(true); // Tampilkan loader
-          try {
-            const response = await fetch(scriptURL, {
-              method: "POST",
-              body: new FormData(form),
-            });
-            if (response.ok) {
-              setStatusMessage("Data berhasil dikirim!");
-              form.reset(); // Reset form hanya jika pengiriman sukses
-              setTimeout(() => {
-                window.location.href = "/thankyou"; // Redirect setelah 1 detik
-              }, 1000);
-            } else {
-              setStatusMessage("Terjadi kesalahan saat mengirim data.");
-            }
-          } catch (error) {
-            setStatusMessage("Terjadi kesalahan saat mengirim data.");
-          } finally {
-            setIsLoading(false); // Sembunyikan loader
-            buttonCounter = 0; // Reset counter untuk klik selanjutnya
+        setShowModal(true);
+        setCanClick(false);
+        setCountdown(5); // Set ulang countdown saat modal muncul
+
+        let count = 5;
+        const interval = setInterval(() => {
+          count -= 1;
+          setCountdown(count);
+
+          if (count <= 1) {
+            clearInterval(interval); // Hentikan countdown di angka 1
+            setCanClick(true);
           }
-        }
+        }, 1000);
       };
+
       form.addEventListener("submit", handleSubmit);
       return () => {
         form.removeEventListener("submit", handleSubmit);
       };
     }
   }, []);
+
+  const handleConfirmSubmit = async () => {
+    setShowModal(false); // Tutup modal
+    const form = document.forms["regist-form"];
+
+    if (!form) return;
+
+    setIsLoading(true);
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form),
+      });
+
+      if (response.ok) {
+        setStatusMessage("Data berhasil dikirim!");
+
+        // Ambil data sebelum reset
+        const formData = {
+          namaLengkap: selectedMaxNamaLengkap,
+          projectTitle: selectedMaxProject,
+          category: selectedCategory,
+          categoryPrice: categoryPrice,
+          namasekolah: selectedNamaSekolah,
+        };
+
+        form.reset();
+        setTimeout(() => {
+          navigate(
+            `/thankyou?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
+              &projectTitle=${encodeURIComponent(selectedMaxProject)}
+              &category=${encodeURIComponent(selectedCategory)}
+              &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
+          );
+        }, 1000);
+      } else {
+        setStatusMessage("Terjadi kesalahan saat mengirim data.");
+      }
+    } catch (error) {
+      setStatusMessage("Terjadi kesalahan saat mengirim data.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <>
@@ -100,7 +148,7 @@ export default function Indonesiaparticipants() {
             <h1 className="garis-bawah"></h1>
             <br></br>
             <h4>
-              HALLO PESERTA OSPC 2025, Mohon perhatikan informasi berikut ini
+              HALLO PESERTA OSPC 2026, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -124,6 +172,38 @@ export default function Indonesiaparticipants() {
             </p>
             <br></br>
 
+            {showModal && (
+              <div className="modal-overlay-submit">
+                <div className="modal-submit text-lg-center text-md-center">
+                  <h2 className="text-center">⚠️PERHATIAN!</h2>
+                  <p>
+                    Data yang sudah dikirim tidak dapat diubah kembali. Panitia
+                    akan menggunakan data terakhir yang masuk untuk pencetakan
+                    sertifikat.
+                    <br />
+                    <b>PASTIKAN SELURUH DATA SUDAH BENAR!</b>
+                    <br />
+                    <b>
+                      JANGAN MENDAFTAR ULANG DENGAN DATA YANG SAMA BERKALI-KALI!
+                    </b>
+                  </p>
+                  <div className="modal-buttons-submit">
+                    <button onClick={() => setShowModal(false)}>Kembali</button>
+                    <button
+                      onClick={handleConfirmSubmit}
+                      disabled={!canClick || isLoading}
+                    >
+                      {isLoading
+                        ? "Mengirim..."
+                        : canClick
+                        ? "Lanjutkan"
+                        : `Tunggu... ${countdown}`}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <form name="regist-form">
               <h1>BIODATA</h1>
               <h1 className="garis-bawah"></h1>
@@ -138,9 +218,28 @@ export default function Indonesiaparticipants() {
                     name="CATEGORY_PARTICIPANT"
                     className="form-control"
                     placeholder="Choose Categories Participant"
-                    value="PESERTA INDONESIA"
+                    value="INDONESIA"
                     readOnly
                   />
+                </div>
+                <div class="input-box">
+                  <label for="CATEGORY_COMPETITION" class="form-label">
+                    Kategori Kompetisi
+                  </label>
+                  <select
+                    type="text"
+                    id="CATEGORY_COMPETITION"
+                    name="CATEGORY_COMPETITION"
+                    class="form-control"
+                    placeholder="Choose Category Competition "
+                    onChange={handleCategoryChange}
+                    required
+                  >
+                    <option value="">--Pilih Kategori Kompetisi--</option>
+                    <option value="Online Science Project Competition - Kompetisi Daring">
+                      Kompetisi Daring
+                    </option>
+                  </select>
                 </div>
               </div>
 
@@ -155,9 +254,9 @@ export default function Indonesiaparticipants() {
                       diawal, dengan format seperti berikut :
                     </p>
                     <p>Note : maksimal 2 anggota + 1 ketua tim</p>
-                    <h6>Kamal Putra</h6>
-                    <h6>Ranu Ramadhan</h6>
-                    <h6>Irsyad Zaidan</h6>
+                    <h6>Adrian Sitompul</h6>
+                    <h6>Pangeran Hasanudin Agung</h6>
+                    <h6>Irsyad Zaidan Adi Pratama</h6>
                   </label>
                   <textarea
                     type="text"
@@ -266,7 +365,12 @@ export default function Indonesiaparticipants() {
                     className="form-control"
                     placeholder="Masukan Nama Sekolah/Universitas Anda"
                     required
+                    value={selectedNamaSekolah}
+                    onChange={handleInputNameSchoolChange}
                   ></textarea>
+                  <p>
+                    {selectedNamaSekolah.length} / {maxSchoolChars} character
+                  </p>
                 </div>
                 <div className="input-box">
                   <label for="NPSN" className="form-label">
@@ -432,13 +536,12 @@ export default function Indonesiaparticipants() {
                     name="CATEGORIES"
                     className="form-control"
                     required
-                    onChange={handleCategoryChange}
                   >
                     <option value="">--Pilih Kategori--</option>
                     <option value="Social Science">Social Science</option>
                     <option value="Life Sciences">Life Sciences</option>
-                    <option value="PHYSICS AND ENGINEERING">
-                      PHYSICS AND ENGINEERING
+                    <option value="Physics and Engineering">
+                      Physics and Engineering
                     </option>
                   </select>
                 </div>
@@ -526,7 +629,7 @@ export default function Indonesiaparticipants() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi OSPC 2025
+                    Sumber Informasi Kompetisi OSPC 2026
                   </label>
                   <select
                     type="text"
@@ -537,15 +640,15 @@ export default function Indonesiaparticipants() {
                     required
                   >
                     <option value="">--Pilih Sumber Informasi--</option>
+                    <option value="IYSA Website">IYSA Website</option>
+                    <option value="OSPC Website">OSPC Website</option>
                     <option value="IYSA Instagram">IYSA Instagram</option>
                     <option value="OSPC Instagram">OSPC Instagram</option>
                     <option value="Pembimbing/Sekolah">
                       Pembimbing/Sekolah
                     </option>
-                    <option value="IYSA FaceBook">IYSA FaceBook</option>
+                    <option value="IYSA FaceBook">IYSA Facebook</option>
                     <option value="IYSA Linkedin">IYSA Linkedin</option>
-                    <option value="IYSA Website">IYSA Website</option>
-                    <option value="OSPC Website">OSPC Website</option>
                     <option value="IYSA Email">IYSA Email</option>
                     <option value="OSPC Email">OSPC Email</option>
                     <option value="Acara Sebelumnya">Acara Sebelumnya</option>

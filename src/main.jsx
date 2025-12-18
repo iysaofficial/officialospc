@@ -10,7 +10,7 @@ import Jenjang23 from "./pages/low/2023/jenjang23.jsx";
 
 import HomeRegist from "./pages/registration/homeregist.jsx";
 import Indonesiaparticipants from "./pages/registration/indonesiaparticipants.jsx"
-import Thankyou from "./pages/thankyoupage.jsx";
+import ThankYou from "./pages/registration/thankyou.jsx";
 import Newspage from "./pages/newspage.jsx";
 
 const router = createBrowserRouter([
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/thankyou",
-    element: <Thankyou />
+    element: <ThankYou />
   },
   {
     path: "/news",
