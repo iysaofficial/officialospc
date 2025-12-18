@@ -11,12 +11,15 @@ const mainhero = () => {
                             <div className="content-text col-lg-6">
                                 <div>
                                     {/* <h1 className="fw-weight-800">Segera Hadir 2026</h1> */}
-                                    <h1 className="fw-weight-800">Buka Pendaftaran 2026</h1>
+                                    <h1 className="fw-weight-800">Buka Pendaftaran 2026</h1> 
                                     <hr style={{ border: '3px solid' }} />
                                     <p>Ikuti OSPC 2026 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>
                                 <div className="mt-2">
-                                    <a href="/" className="btn btn-primary btn-action">Daftar disini!!</a>
+                                    <a href="/homeregist" className="btn btn-primary btn-action">Daftar disini!!</a>
+                                </div>
+                                <div className="mt-2">
+                                    <a href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing" target="_blank" className="btn btn-primary btn-action">Buku Panduan</a>
                                 </div>
                             </div>
                             <div className="content-img col-lg-6">
