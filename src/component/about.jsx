@@ -12,7 +12,7 @@ const about = () => {
                             <div className="content-text col-lg-6">
                                 <div className="mb-3 mb-lg-0">
                                     <p>Online Science Project Competition (OSPC) merupakan ajang adu kemampuan para peneliti muda berusia 13-20 tahun dalam memperlihatkan hasil penelitian yang telah mereka lakukan dalam bentuk karya tulis ilmiah.</p>
-                                    <p>Melalui Online Science Project Competition 2024, para peneliti muda berkesempatan untuk memaparkan hasil karya tulis ilmiah mereka, memperkaya wawasan, meningkatkan kemampuan berkomunikasi dan berkesempatan untuk berkompetisi di tingkat dunia dalam ajang internasional di event-event IYSA.</p>
+                                    <p>Melalui Online Science Project Competition, para peneliti muda berkesempatan untuk memaparkan hasil karya tulis ilmiah mereka, memperkaya wawasan, meningkatkan kemampuan berkomunikasi dan berkesempatan untuk berkompetisi di tingkat dunia dalam ajang internasional di event-event IYSA.</p>
                                 </div>
                             </div>
                             <div className="content-img col-lg-6">
