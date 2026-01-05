@@ -657,7 +657,8 @@ export default function Indonesiaparticipants() {
                 </div>
                 <div className="input-box">
                   <label for="FILE" className="form-label">
-                    Upload Extended Abstract{" "}
+                    {/* Upload Extended Abstract{" "} */}
+                    Upload Berkas Persyaratan (Full Paper){" "}
                   </label>
                   <input
                     type="url"
