@@ -71,7 +71,6 @@ const contact = () => {
                 </span>{" "}
                 No Telp :
               </p>
-              <a href="https://api.whatsapp.com/send/?phone=6281770914129&text&type=phone_number&app_absent=0">+6281770914129</a>
               <a
                 href="https://api.whatsapp.com/send/?phone=6288213248890&text&type=phone_number&app_absent=0"
                 target="_blank"

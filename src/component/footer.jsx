@@ -73,14 +73,6 @@ const footer = () => {
                       <i className="fa fa-phone me-1"></i> +6288213248890
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href="https://api.whatsapp.com/send/?phone=6281770914129&text&type=phone_number&app_absent=0"
-                      target="_blank"
-                    >
-                      <i className="fa fa-phone me-1"></i> +6281770914129
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>

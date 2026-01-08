@@ -7,11 +7,16 @@ const organized = () => {
                 <section className="organized-section">
                     <div className="container">
                         <div className="organized-wrapper row">
-                            <div className="content-text text-center">
+                            <div className="content-text text-center w-100">
                                 <h1>Organized By</h1>
                             </div>
-                            <div className="content-box">
-                                <img src="./asset/Logo/LogoIYSA.WebP" alt="" />
+                            <div className="content-box col-12">
+                                <div className="logo-container">
+                                    <img src="./asset/Logo/LogoIYSA.WebP" alt="Logo IYSA" className="responsive-img" />
+                                </div>
+                                <div className="logo-container">
+                                    <img src="./asset/Logo/Next generation knowledge logo.jpg" alt="Next Generation Knowledge Logo" className="responsive-img" />
+                                </div>
                             </div>
                         </div>
                         {/* <div className="supported-wrapper row mt-5">
