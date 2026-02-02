@@ -655,9 +655,8 @@ export default function Indonesiaparticipants() {
                     <option value="Lainnya">Lainnya</option>
                   </select>
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="FILE" className="form-label">
-                    {/* Upload Extended Abstract{" "} */}
                     Upload Berkas Persyaratan (Full Paper){" "}
                   </label>
                   <input
@@ -667,7 +666,7 @@ export default function Indonesiaparticipants() {
                     className="form-control"
                     placeholder="Upload Link File Drive"
                   />
-                </div>
+                </div> */}
               </div>
               {/* GENERAL INFORMATION END */}
               {/* GENERAL INFORMATION END */}
