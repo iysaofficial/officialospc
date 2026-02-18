@@ -124,7 +124,7 @@ const navigation = () => {
                 Kontak{" "}
               </a>
             </div>
-            <div className="ms-lg-3">
+            {/* <div className="ms-lg-3">
               <a
                 href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing"
                 target="_blank"
@@ -133,7 +133,7 @@ const navigation = () => {
                 {" "}
                 Buku Panduan{" "}
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

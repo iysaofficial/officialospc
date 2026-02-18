@@ -35,7 +35,7 @@ const footer = () => {
                   <li>
                     <a href="/homeregist">Tautan Registrasi</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       href="https://drive.google.com/file/d/1D0P_oI6_Lwv6_IVhGpLl5B3r8sYvQg7k/view?usp=sharing"
                       target="_blank"
@@ -43,7 +43,7 @@ const footer = () => {
                       {" "}
                       Buku Panduan{" "}
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

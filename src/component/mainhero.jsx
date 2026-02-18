@@ -16,11 +16,14 @@ const mainhero = () => {
                                     <p>Ikuti OSPC 2026 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>
                                 <div className="mt-2">
+                                    <a href="#!" className="btn btn-primary btn-action">Pendaftaran ditutup</a>
+                                </div>
+                                {/* <div className="mt-2">
                                     <a href="/homeregist" className="btn btn-primary btn-action">Daftar disini!!</a>
                                 </div>
                                 <div className="mt-2">
                                     <a href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing" target="_blank" className="btn btn-primary btn-action">Buku Panduan</a>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="content-img col-lg-6">
                                 <div className="img-logo mx-auto">
