@@ -14,9 +14,9 @@ const organized = () => {
                                 <div className="logo-container">
                                     <img src="./asset/Logo/LogoIYSA.WebP" alt="Logo IYSA" className="responsive-img" />
                                 </div>
-                                <div className="logo-container">
+                                {/* <div className="logo-container">
                                     <img src="./asset/Logo/Next generation knowledge logo.jpg" alt="Next Generation Knowledge Logo" className="responsive-img" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         {/* <div className="supported-wrapper row mt-5">

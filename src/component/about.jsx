@@ -7,7 +7,7 @@ const about = () => {
                 <section className="about-section" id="about">
                     <div className="container">
                         <div className="about-wrapper row">
-                            <h1 className="text-center">Latar Belakang</h1>
+                            <h1 className="text-center">After Event 2026</h1>
                             <hr style={{ border: '3px solid' }} />
                             <div className="content-text col-lg-6">
                                 <div className="mb-3 mb-lg-0">

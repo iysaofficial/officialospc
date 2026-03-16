@@ -33,6 +33,13 @@ const navigation = () => {
               <NavDropdown title="Liputan Media" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="3.3"
+                  href="https://docs.google.com/document/d/1Lh6xeE1XBWMMVwHjTeaUw2wn8yXs99AYsJjSC2Nr-PE/edit?usp=drive_link"
+                  target="_blank"
+                >
+                  Press Release 2026
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="3.3"
                   href="https://drive.google.com/file/d/1d7PuFr7mKMozXBsJaQD7TWyXmsLjdRA6/view?usp=sharing"
                   target="_blank"
                 >
