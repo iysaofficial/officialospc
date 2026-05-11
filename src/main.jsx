@@ -5,6 +5,7 @@ import Home from "./pages";
 
 import Faq from "./pages/faq.jsx";
 import Lowtahun from "./pages/low/lowtahun.jsx";
+import Jenjang26 from "./pages/low/2026/jenjang26.jsx";
 import Jenjang24 from "./pages/low/2024/jenjang24.jsx";
 import Jenjang23 from "./pages/low/2023/jenjang23.jsx";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/lowtahun",
     element: <Lowtahun />
+  },
+  {
+    path: "/jenjang26",
+    element: <Jenjang26 />
   },
   {
     path: "/jenjang24",
