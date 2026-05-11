@@ -54,6 +54,13 @@ const navigation = () => {
               </NavDropdown>
               <NavDropdown title="Galeri" id="nav-dropdown">
                 <NavDropdown.Item
+                  eventKey="3.4"
+                  href="https://drive.google.com/drive/folders/1BNjr7vXRFy2z1YZtMxRTo1sp8V6pJirH?usp=sharing"
+                  target="_blank"
+                >
+                  2026
+                </NavDropdown.Item>
+                <NavDropdown.Item
                   eventKey="3.1"
                   href="https://drive.google.com/drive/folders/12NlMzG5aGikdjkfiZWr8DkTf3kP3ts6y?usp=drive_link"
                   target="_blank"
