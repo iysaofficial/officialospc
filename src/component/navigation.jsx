@@ -33,7 +33,7 @@ const navigation = () => {
               <NavDropdown title="Liputan Media" id="nav-dropdown">
                 <NavDropdown.Item
                   eventKey="3.3"
-                  href="https://docs.google.com/document/d/1Lh6xeE1XBWMMVwHjTeaUw2wn8yXs99AYsJjSC2Nr-PE/edit?usp=drive_link"
+                  href="https://drive.google.com/file/d/1ZAgzQhkA9uWHExyAmNsUbS9wzXYW6yLu/view?usp=drive_link"
                   target="_blank"
                 >
                   Press Release 2026
