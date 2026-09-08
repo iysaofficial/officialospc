@@ -11,7 +11,7 @@ const mainhero = () => {
                             <div className="content-text col-lg-6">
                                 <div>
                                     {/* <h1 className="fw-weight-800">Segera Hadir 2026</h1> */}
-                                    <h1 className="fw-weight-800">Coming Soon 2027</h1> 
+                                    <h1 className="fw-weight-800">Segera Hadir 2027</h1> 
                                     <hr style={{ border: '3px solid' }} />
                                     <p>Ikuti OSPC 2027 dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
                                 </div>

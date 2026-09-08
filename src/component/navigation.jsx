@@ -141,20 +141,30 @@ const navigation = () => {
               <a className="nav-item nav-link" href="/faq">
                 FAQ{" "}
               </a>
-              <a className="nav-item nav-link" href="/#contact">
-                Kontak{" "}
-              </a>
+              <NavDropdown title="Buku Panduan" id="nav-dropdown">
+                <NavDropdown.Item
+                  eventKey="5.1"
+                  href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing"
+                  target="_blank"
+                >
+                  2026
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="5.2"
+                  href="https://drive.google.com/file/d/1iM1obpW0fK84SM9F1pSkjSyZ3hW2SWSw/view?usp=sharing"
+                  target="_blank"
+                >
+                  2025
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  eventKey="5.3"
+                  href="https://drive.google.com/file/d/1CNe_ePOobGCN0ivWrkQasj6mDQAkwctn/view?usp=sharing"
+                  target="_blank"
+                >
+                  2024
+                </NavDropdown.Item>
+              </NavDropdown>
             </div>
-            {/* <div className="ms-lg-3">
-              <a
-                href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing"
-                target="_blank"
-                className="btn btn-primary btn-action"
-              >
-                {" "}
-                Buku Panduan{" "}
-              </a>
-            </div> */}
           </div>
         </div>
       </nav>
