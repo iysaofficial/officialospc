@@ -2,8 +2,11 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 // Import CSS
 import "../assets/css/styles.css";
+import { usePendaftaran, SERI } from "../lib/pendaftaran";
 
-const navigation = () => {
+const Navigation = () => {
+  // Guidebook edisi berjalan dari dasbor (hanya bila sudah diterbitkan).
+  const { identitas, guidebook } = usePendaftaran();
 
   return (
     // Navbar
@@ -142,6 +145,14 @@ const navigation = () => {
                 FAQ{" "}
               </a>
               <NavDropdown title="Buku Panduan" id="nav-dropdown">
+                {guidebook && (
+                  <NavDropdown.Item href={guidebook.url} target="_blank" data-iysa-panduan={SERI}>
+                    Buku Panduan {identitas?.tahun}
+                  </NavDropdown.Item>
+                )}
+                <NavDropdown.Item href="#syarat-ketentuan" data-iysa-panduan={SERI} data-iysa-panduan-jenis="tnc">
+                  Syarat &amp; Ketentuan
+                </NavDropdown.Item>
                 <NavDropdown.Item
                   eventKey="5.1"
                   href="https://drive.google.com/file/d/16-do3diCV7Ob7SUVpYtVp2JJ1z8S608k/view?usp=sharing"
@@ -172,4 +183,4 @@ const navigation = () => {
   );
 };
 
-export default navigation;
+export default Navigation;

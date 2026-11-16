@@ -1,9 +1,9 @@
 import "../assets/css/styles.css";
-import { usePendaftaran, formatTanggal } from "../lib/pendaftaran";
+import { usePendaftaran, formatTanggal, SERI } from "../lib/pendaftaran";
 
 /* Tombol dan judul mengikuti togel pendaftaran di dasbor IYSA. */
 const MainHero = () => {
-  const { memuat, identitas, keadaan } = usePendaftaran();
+  const { memuat, identitas, keadaan, guidebook } = usePendaftaran();
   const tahun = identitas?.tahun ?? "2027";
 
   const judul = keadaan === "buka" ? `Pendaftaran OSPC ${tahun} Dibuka` : `Segera Hadir ${tahun}`;
@@ -33,7 +33,16 @@ const MainHero = () => {
               <hr style={{ border: "3px solid" }} />
               <p>Ikuti OSPC {tahun} dan jadilah bagian dari peneliti muda Indonesia yang berkompetisi di tingkat dunia di event-event IYSA!</p>
             </div>
-            <div className="mt-2">{tombol}</div>
+            <div className="mt-2 d-flex flex-wrap gap-2">
+              {tombol}
+              {/* Guidebook hanya bila sudah diterbitkan dari dasbor; membuka modal panduan IYSA. */}
+              {guidebook && (
+                <a href={guidebook.url} target="_blank" rel="noopener noreferrer"
+                   className="btn btn-primary btn-action" data-iysa-panduan={SERI}>
+                  Buku Panduan
+                </a>
+              )}
+            </div>
           </div>
           <div className="content-img col-lg-6">
             <div className="img-logo mx-auto">
