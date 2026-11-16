@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 import Home from "./pages";
 
 import Faq from "./pages/faq.jsx";
@@ -10,7 +10,6 @@ import Jenjang24 from "./pages/low/2024/jenjang24.jsx";
 import Jenjang23 from "./pages/low/2023/jenjang23.jsx";
 
 import HomeRegist from "./pages/registration/homeregist.jsx";
-import Indonesiaparticipants from "./pages/registration/indonesiaparticipants.jsx"
 import ThankYou from "./pages/registration/thankyou.jsx";
 import Newspage from "./pages/newspage.jsx";
 
@@ -44,8 +43,10 @@ const router = createBrowserRouter([
     element: <HomeRegist />
   },
   {
+    // Formulir lama (Google Apps Script) dipensiunkan: pendaftaran kini lewat
+    // formulir dasbor di /homeregist. Alamat lama diarahkan ke sana.
     path: "/indonesiaparticipants",
-    element: <Indonesiaparticipants />
+    element: <Navigate to="/homeregist" replace />
   },
   {
     path: "/thankyou",
